@@ -41,8 +41,8 @@ def mouseclick(pos):
             state = 2
             card2 = field_index
         elif state == 2:
-            state = 1
             exposed[field_index] = True
+            state = 1            
             if not deck_of_cards[card1] == deck_of_cards[card2]:
                 exposed[card1] = exposed[card2] = False  
             else:
