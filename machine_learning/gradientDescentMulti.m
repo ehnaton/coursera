@@ -18,14 +18,7 @@ for iter = 1:num_iters
     %
 
 
-
-
-
-
-
-
-
-
+    theta = theta - ((X*theta-y)'* X)'*alpha/m; 
 
     % ============================================================
 
@@ -35,3 +28,4 @@ for iter = 1:num_iters
 end
 
 end
+
